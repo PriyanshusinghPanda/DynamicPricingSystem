@@ -1,0 +1,6052 @@
+{
+  "history": [
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 94
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 96
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 96
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 93
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 96
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 94
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 113
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 108
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 111
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 111
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 103
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 107
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 110
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 103
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 104
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 113
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 111
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 120
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 119
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 110
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 118
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 118
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 109
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 109
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 115
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 109
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 95
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 102
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 102
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 102
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 93
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 90
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 92
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 88
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 92
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 89
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 86
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 94
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 92
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 101
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 101
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 94
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 92
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 95
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 105
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 103
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 100
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 96
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 109
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 102
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 104
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 105
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 106
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 102
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 104
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 107
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 105
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 112
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 94
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 95
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 96
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 90
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 92
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 119
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 117
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 113
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 113
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 117
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 118
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 120
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 116
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 119
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 110
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 112
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 106
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 104
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 112
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 113
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 104
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 104
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 114
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 106
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 114
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 102
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 101
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 101
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 105
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 98
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 104
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 46
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 46
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 46
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 46
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 59
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 59
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 59
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 59
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 58
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 45
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 44
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 43
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 43
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 43
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 44
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 45
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 45
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 44
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 46
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 46
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 45
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 45
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 59
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 58
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 58
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 59
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 58
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 56
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 52
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 53
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 51
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 39
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 40
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 29
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 29
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 29
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 29
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 31
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 39
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 39
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 39
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 35
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 58
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 58
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 58
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 44
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 44
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 43
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 44
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 45
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 44
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 45
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 45
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 46
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 45
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 59
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 58
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 59
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 61
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 60
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 59
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 57
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 52
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 49
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 62
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 72
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 75
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 70
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 75
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 72
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 69
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 70
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 78
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 79
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 75
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 73
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 79
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 77
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 78
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 76
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 79
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 69
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 58
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 60
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 58
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 60
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 60
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 62
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 62
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 62
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 69
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 70
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 72
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 70
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 72
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 73
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 70
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 73
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 73
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 62
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 62
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 76
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 77
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 79
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 80
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 77
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 78
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 77
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 76
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 75
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 72
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 68
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 71
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 29
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 29
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 21
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 21
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 22
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 22
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 21
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 22
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 22
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 23
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 30
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 30
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 29
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 30
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 30
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 27
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-02-23",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-02-24",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-02-25",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-02-26",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-02-27",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-02-28",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-03-01",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-03-02",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-03-03",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-03-04",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-02-23",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-02-24",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-02-25",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-02-26",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-02-27",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-02-28",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-03-01",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-03-02",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-03-04",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-02-23",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-02-24",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-02-25",
+      "price": 39
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-02-26",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-02-27",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-02-28",
+      "price": 39
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-03-01",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-03-02",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-03-03",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-03-04",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-02-23",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-02-24",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-02-25",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-02-26",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-02-27",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-02-28",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-03-01",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-03-02",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-03-04",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-02-23",
+      "price": 30
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-02-24",
+      "price": 29
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-02-25",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-02-26",
+      "price": 30
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-02-27",
+      "price": 29
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-02-28",
+      "price": 29
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-03-01",
+      "price": 30
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-03-02",
+      "price": 29
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-03-03",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-03-04",
+      "price": 29
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-02-23",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-02-24",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-02-25",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-02-26",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-02-27",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-02-28",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-03-01",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-03-02",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-03-03",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-03-04",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-02-23",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-02-24",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-02-25",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-02-26",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-02-27",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-02-28",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-03-01",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-03-02",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-03-03",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-03-04",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-02-23",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-02-24",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-02-25",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-02-26",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-02-27",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-02-28",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-03-01",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-03-02",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-03-03",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-03-04",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-02-23",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-02-24",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-02-25",
+      "price": 30
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-02-26",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-02-27",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-02-28",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-03-01",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-03-02",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-03-03",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-03-04",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-02-23",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-02-24",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-02-25",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-02-26",
+      "price": 40
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-02-27",
+      "price": 39
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-02-28",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-03-01",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-03-02",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-03-03",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-03-04",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-02-23",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-02-24",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-02-25",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-02-26",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-02-27",
+      "price": 37
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-02-28",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-03-01",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-03-02",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-03-03",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-03-04",
+      "price": 34
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-02-23",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-02-24",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-02-25",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-02-26",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-02-27",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-02-28",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-03-01",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-03-02",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-03-03",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-03-04",
+      "price": 34
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 109
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 116
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 96
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 105
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 94
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 113
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 110
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 103
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 44
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 49
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 51
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 47
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 58
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 51
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 34
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 35
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 34
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 58
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 45
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 51
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 47
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 59
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 51
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 77
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 60
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 66
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 70
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 76
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 67
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 22
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 29
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 26
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-03-05",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-03-05",
+      "price": 39
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-03-05",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-03-05",
+      "price": 30
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-03-05",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-03-05",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-03-05",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-03-05",
+      "price": 35
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-03-05",
+      "price": 34
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 97
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 108
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 116
+    },
+    {
+      "product_id": 101,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 99
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 91
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 95
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 101
+    },
+    {
+      "product_id": 101,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 105
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 95
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 115
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 110
+    },
+    {
+      "product_id": 101,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 103
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 57
+    },
+    {
+      "product_id": 102,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 45
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 50
+    },
+    {
+      "product_id": 102,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 54
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 48
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 58
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 55
+    },
+    {
+      "product_id": 102,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 52
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 37
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 38
+    },
+    {
+      "product_id": 103,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 30
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 32
+    },
+    {
+      "product_id": 103,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 33
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 39
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 36
+    },
+    {
+      "product_id": 103,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 34
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 54
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 56
+    },
+    {
+      "product_id": 201,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 50
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 45
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 49
+    },
+    {
+      "product_id": 201,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 53
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 48
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 59
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 55
+    },
+    {
+      "product_id": 201,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 50
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 64
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 72
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 75
+    },
+    {
+      "product_id": 202,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 61
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 65
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 67
+    },
+    {
+      "product_id": 202,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 71
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 63
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 78
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 74
+    },
+    {
+      "product_id": 202,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 68
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 28
+    },
+    {
+      "product_id": 301,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 22
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 25
+    },
+    {
+      "product_id": 301,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 26
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 24
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 29
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 27
+    },
+    {
+      "product_id": 301,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 26
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_101",
+      "date": "2025-03-06",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_102",
+      "date": "2025-03-06",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_103",
+      "date": "2025-03-06",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "1_104",
+      "date": "2025-03-06",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_201",
+      "date": "2025-03-06",
+      "price": 31
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_202",
+      "date": "2025-03-06",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_203",
+      "date": "2025-03-06",
+      "price": 33
+    },
+    {
+      "product_id": 302,
+      "location_key": "2_204",
+      "date": "2025-03-06",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_301",
+      "date": "2025-03-06",
+      "price": 32
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_302",
+      "date": "2025-03-06",
+      "price": 38
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_303",
+      "date": "2025-03-06",
+      "price": 36
+    },
+    {
+      "product_id": 302,
+      "location_key": "3_304",
+      "date": "2025-03-06",
+      "price": 34
+    }
+  ]
+}

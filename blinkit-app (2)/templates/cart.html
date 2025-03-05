@@ -1,0 +1,93 @@
+{% extends 'layout.html' %}
+
+{% block title %}Your Cart - Blinkit Clone{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+    <h1 class="text-2xl font-bold">Your Cart</h1>
+</div>
+
+{% if cart_items %}
+<div class="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
+    <div class="p-6">
+        <div class="mb-4 overflow-x-auto">
+            <table class="w-full">
+                <thead>
+                    <tr class="border-b">
+                        <th class="text-left pb-4">Product</th>
+                        <th class="text-center pb-4">Price</th>
+                        <th class="text-center pb-4">Quantity</th>
+                        <th class="text-right pb-4">Subtotal</th>
+                        <th class="text-right pb-4">Original Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in cart_items %}
+                    <tr class="border-b">
+                        <td class="py-4">
+                            <div class="flex items-center">
+                                <img src="{{ item.image }}" alt="{{ item.name }}" class="w-16 h-16 object-contain mr-4">
+                                <div>
+                                    <h3 class="font-medium">{{ item.name }}</h3>
+                                    <p class="text-gray-500 text-sm">{{ item.unit }}</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center py-4">₹{{ item.price }}</td>
+                        <td class="text-center py-4">
+                            <form action="{{ url_for('update_cart') }}" method="post"
+                                class="flex items-center justify-center">
+                                <input type="hidden" name="product_id" value="{{ item.id }}">
+                                <button type="submit" name="quantity" value="{{ item.quantity - 1 }}"
+                                    class="bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                    </svg>
+                                </button>
+                                <span class="mx-3">{{ item.quantity }}</span>
+                                <button type="submit" name="quantity" value="{{ item.quantity + 1 }}"
+                                    class="bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 5v14M5 12h14"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                        </td>
+                        <td class="text-right py-4" style="text-decoration: line-through; color: red;">₹{{ item.original }}</td>
+                        <td class="text-right py-4">₹{{ item.subtotal }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t">
+            <a href="{{ url_for('clear_cart') }}" class="text-red-500">Clear Cart</a>
+            <div class="text-right">
+                <div class="text-lg font-bold mb-2" style="display: inline; margin-right: 10px;text-decoration: line-through; color: red;">Original: ₹{{ original_total }}</div>
+                <div class="text-lg font-bold mb-2" style="display: inline;">Total: ₹{{ total }}</div>
+                <a href="{{ url_for('checkout') }}"
+                    class="bg-primary text-white px-6 py-2 rounded-md font-medium inline-block">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="bg-white rounded-lg shadow-sm p-8 text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4 text-gray-400">
+        <circle cx="8" cy="21" r="1"></circle>
+        <circle cx="19" cy="21" r="1"></circle>
+        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+    </svg>
+    <h2 class="text-xl font-semibold mb-2">Your cart is empty</h2>
+    <p class="text-gray-500 mb-6">Add items to your cart to proceed</p>
+    <a href="/" class="bg-primary text-white px-6 py-2 rounded-md font-medium">Continue Shopping</a>
+</div>
+{% endif %}
+{% endblock %}
+

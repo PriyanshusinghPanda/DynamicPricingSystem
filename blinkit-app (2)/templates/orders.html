@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block title %}My Orders - Blinkit Clone{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+    <h1 class="text-2xl font-bold">My Orders</h1>
+</div>
+
+{% if not orders %}
+<div class="bg-white rounded-lg shadow-sm p-8 text-center">
+    <p class="text-gray-600 mb-4">You haven't placed any orders yet.</p>
+    <a href="{{ url_for('index') }}" class="bg-primary text-white px-4 py-2 rounded-md">Start Shopping</a>
+</div>
+{% else %}
+<div class="space-y-6">
+    {% for order in orders %}
+    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="p-6 border-b">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-xl font-semibold mb-1">Order #{{ order.id }}</h2>
+                    <p class="text-gray-600">{{ order.date }}</p>
+                    <p class="text-gray-600">{{ order.location }}</p>
+                </div>
+                <div class="text-right">
+                    <span class="inline-block px-3 py-1 rounded-full text-sm font-medium 
+                    {% if order.status == 'delivered' %}bg-green-100 text-green-800
+                    {% elif order.status == 'cancelled' %}bg-red-100 text-red-800
+                    {% else %}bg-yellow-100 text-yellow-800{% endif %}">
+                        {{ order.status|capitalize }}
+                    </span>
+                    <p class="font-bold mt-2">₹{{ order.total }}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="px-6 py-4">
+            <h3 class="font-medium mb-3">Items ({{ order.items_count }})</h3>
+            <div class="space-y-2">
+                {% for item in order.items %}
+                <div class="flex justify-between">
+                    <div>
+                        <span class="font-medium">{{ item.name }}</span>
+                        <span class="text-gray-600 text-sm ml-2">× {{ item.quantity }}</span>
+                    </div>
+                    <span>₹{{ item.subtotal }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="px-6 py-3 bg-gray-50 flex justify-between items-center">
+            <div>
+                <span class="text-sm text-gray-600">
+                    {% if order.status == 'delivered' %}
+                        Delivered on {{ order.date }}
+                    {% elif order.status == 'cancelled' %}
+                        Cancelled
+                    {% else %}
+                        Expected delivery: 30 mins
+                    {% endif %}
+                </span>
+            </div>
+            <div>
+                {% if order.status == 'pending' %}
+                <button class="text-gray-700 hover:text-red-600 text-sm font-medium">Cancel Order</button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %} 

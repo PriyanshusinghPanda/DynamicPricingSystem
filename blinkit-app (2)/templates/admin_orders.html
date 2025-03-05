@@ -1,0 +1,272 @@
+{% extends 'admin_layout.html' %}
+
+{% block title %}Manage Orders - Admin Panel{% endblock %}
+
+{% block admin_content %}
+<div class="mb-6">
+    <h1 class="text-2xl font-bold">Manage Orders</h1>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+    <div class="p-4 border-b">
+        <div class="flex flex-wrap items-center gap-4">
+            <input type="text" placeholder="Search orders..." class="border rounded-md px-3 py-2">
+            
+            <select class="border rounded-md px-3 py-2">
+                <option value="">All Statuses</option>
+                <option value="pending">Pending</option>
+                <option value="processing">Processing</option>
+                <option value="delivered">Delivered</option>
+                <option value="cancelled">Cancelled</option>
+            </select>
+            
+            <div class="flex items-center">
+                <label class="mr-2">Date Range:</label>
+                <input type="date" class="border rounded-md px-3 py-2">
+                <span class="mx-2">to</span>
+                <input type="date" class="border rounded-md px-3 py-2">
+            </div>
+        </div>
+    </div>
+    
+    <div class="overflow-x-auto">
+        <table class="w-full">
+            <thead>
+                <tr class="bg-gray-50 border-b">
+                    <th class="text-left py-3 px-4">Order ID</th>
+                    <th class="text-left py-3 px-4">Customer</th>
+                    <th class="text-left py-3 px-4">Date</th>
+                    <th class="text-left py-3 px-4">Location</th>
+                    <th class="text-left py-3 px-4">Items</th>
+                    <th class="text-left py-3 px-4">Total</th>
+                    <th class="text-left py-3 px-4">Status</th>
+                    <th class="text-left py-3 px-4">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr class="border-b">
+                    <td class="py-3 px-4">#{{ order.id }}</td>
+                    <td class="py-3 px-4">{{ order.customer_name }}</td>
+                    <td class="py-3 px-4">{{ order.date }}</td>
+                    <td class="py-3 px-4">{{ order.location }}</td>
+                    <td class="py-3 px-4">{{ order.items }}</td>
+                    <td class="py-3 px-4">₹{{ order.total }}</td>
+                    <td class="py-3 px-4">
+                        <span class="px-2 py-1 rounded-full text-xs 
+                            {% if order.status == 'delivered' %}bg-green-100 text-green-800
+                            {% elif order.status == 'processing' %}bg-blue-100 text-blue-800
+                            {% elif order.status == 'cancelled' %}bg-red-100 text-red-800
+                            {% else %}bg-yellow-100 text-yellow-800{% endif %}">
+                            {{ order.status|capitalize }}
+                        </span>
+                    </td>
+                    <td class="py-3 px-4">
+                        <button class="text-blue-500 hover:text-blue-700" onclick="viewOrderDetails({{ order.id }})">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="p-4 flex justify-between items-center">
+        <div>
+            <span class="text-gray-600">Showing 1-10 of {{ orders|length }} orders</span>
+        </div>
+        <div class="flex space-x-2">
+            <button class="px-3 py-1 border rounded-md">Previous</button>
+            <button class="px-3 py-1 border rounded-md bg-primary text-white">1</button>
+            <button class="px-3 py-1 border rounded-md">2</button>
+            <button class="px-3 py-1 border rounded-md">3</button>
+            <button class="px-3 py-1 border rounded-md">Next</button>
+        </div>
+    </div>
+</div>
+
+<!-- Order Details Modal (hidden by default) -->
+<div id="orderDetailsModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg w-full max-w-3xl">
+        <div class="p-6 border-b flex justify-between items-center">
+            <h2 class="text-xl font-semibold">Order #<span id="orderIdDisplay"></span> Details</h2>
+            <button onclick="closeOrderDetailsModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="p-6">
+            <div class="grid grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="font-medium mb-2">Customer Information</h3>
+                    <p id="customerName">John Doe</p>
+                    <p id="customerEmail">john@example.com</p>
+                    <p id="customerPhone">+91 9876543210</p>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Delivery Address</h3>
+                    <p id="deliveryAddress">123 Main St, Apartment 4B</p>
+                    <p id="deliveryLocation">Koramangala, Bangalore</p>
+                    <p id="deliveryPincode">560034</p>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium mb-2">Order Items</h3>
+                <div class="border rounded-md overflow-hidden">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-50 border-b">
+                                <th class="text-left py-2 px-4">Product</th>
+                                <th class="text-center py-2 px-4">Price</th>
+                                <th class="text-center py-2 px-4">Quantity</th>
+                                <th class="text-right py-2 px-4">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderItemsTable">
+                            <!-- Order items will be populated here -->
+                        </tbody>
+                        <tfoot class="border-t">
+                            <tr>
+                                <td colspan="3" class="text-right py-2 px-4 font-medium">Subtotal:</td>
+                                <td class="text-right py-2 px-4" id="orderSubtotal">₹0</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right py-2 px-4 font-medium">Delivery Fee:</td>
+                                <td class="text-right py-2 px-4" id="deliveryFee">₹40</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right py-2 px-4 font-medium">Total:</td>
+                                <td class="text-right py-2 px-4 font-bold" id="orderTotal">₹0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium mb-2">Order Status</h3>
+                <div class="flex items-center space-x-3">
+                    <select id="orderStatus" class="border rounded-md px-3 py-2">
+                        <option value="pending">Pending</option>
+                        <option value="processing">Processing</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                    <button class="bg-primary text-white px-4 py-2 rounded-md" onclick="updateOrderStatus()">
+                        Update Status
+                    </button>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="font-medium mb-2">Order Timeline</h3>
+                <div class="space-y-3" id="orderTimeline">
+                    <!-- Timeline will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function viewOrderDetails(orderId) {
+        document.getElementById('orderIdDisplay').textContent = orderId;
+        
+        // Fetch order details and populate modal
+        fetch(`/admin/orders/${orderId}`)
+            .then(response => response.json())
+            .then(data => {
+                // Populate customer info
+                document.getElementById('customerName').textContent = data.customer.name;
+                document.getElementById('customerEmail').textContent = data.customer.email;
+                document.getElementById('customerPhone').textContent = data.customer.phone;
+                
+                // Populate delivery address
+                document.getElementById('deliveryAddress').textContent = data.delivery.address;
+                document.getElementById('deliveryLocation').textContent = `${data.delivery.district}, ${data.delivery.city}`;
+                document.getElementById('deliveryPincode').textContent = data.delivery.pincode;
+                
+                // Populate order items
+                const itemsTable = document.getElementById('orderItemsTable');
+                itemsTable.innerHTML = '';
+                
+                data.items.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.classList.add('border-b');
+                    row.innerHTML = `
+                        <td class="py-2 px-4">${item.name} (${item.unit})</td>
+                        <td class="text-center py-2 px-4">₹${item.price}</td>
+                        <td class="text-center py-2 px-4">${item.quantity}</td>
+                        <td class="text-right py-2 px-4">₹${item.subtotal}</td>
+                    `;
+                    itemsTable.appendChild(row);
+                });
+                
+                // Populate order totals
+                document.getElementById('orderSubtotal').textContent = `₹${data.subtotal}`;
+                document.getElementById('deliveryFee').textContent = `₹${data.delivery_fee}`;
+                document.getElementById('orderTotal').textContent = `₹${data.total}`;
+                
+                // Set current status
+                document.getElementById('orderStatus').value = data.status;
+                
+                // Populate timeline
+                const timeline = document.getElementById('orderTimeline');
+                timeline.innerHTML = '';
+                
+                data.timeline.forEach(event => {
+                    const item = document.createElement('div');
+                    item.classList.add('flex');
+                    item.innerHTML = `
+                        <div class="mr-3">
+                            <div class="w-2 h-2 rounded-full bg-primary mt-1"></div>
+                            <div class="w-0.5 h-full bg-gray-200 ml-0.75"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium">${event.status}</p>
+                            <p class="text-xs text-gray-500">${event.date} - ${event.time}</p>
+                        </div>
+                    `;
+                    timeline.appendChild(item);
+                });
+            });
+        
+        document.getElementById('orderDetailsModal').classList.remove('hidden');
+    }
+    
+    function closeOrderDetailsModal() {
+        document.getElementById('orderDetailsModal').classList.add('hidden');
+    }
+    
+    function updateOrderStatus() {
+        const orderId = document.getElementById('orderIdDisplay').textContent;
+        const status = document.getElementById('orderStatus').value;
+        
+        fetch(`/admin/orders/${orderId}/update-status`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ status }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Order status updated successfully');
+                // Refresh order details
+                viewOrderDetails(orderId);
+            } else {
+                alert('Failed to update order status');
+            }
+        });
+    }
+</script>
+{% endblock %}
+

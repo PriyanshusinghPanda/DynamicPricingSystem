@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}Admin Login - Blinkit Clone{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto bg-white rounded-lg shadow-sm p-6 mt-8">
+    <h1 class="text-2xl font-bold mb-6 text-center">Admin Login</h1>
+    
+    {% if error %}
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+        {{ error }}
+    </div>
+    {% endif %}
+    
+    <form action="{{ url_for('admin_login') }}" method="post">
+        <div class="mb-4">
+            <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+            <input type="text" id="username" name="username" required 
+                   class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+        </div>
+        
+        <div class="mb-6">
+            <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <input type="password" id="password" name="password" required 
+                   class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+        </div>
+        
+        <button type="submit" class="w-full bg-primary text-white py-2 rounded-md font-medium">
+            Login
+        </button>
+    </form>
+</div>
+{% endblock %}
+

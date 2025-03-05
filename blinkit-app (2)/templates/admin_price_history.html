@@ -1,0 +1,371 @@
+{% extends 'admin_layout.html' %}
+
+{% block title %}Price History Management - Admin Panel{% endblock %}
+
+{% block admin_content %}
+<div class="mb-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Price History Management</h1>
+    <div class="flex space-x-2">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md" onclick="openAddEntryModal()">
+            Add Price Entry
+        </button>
+        <button class="bg-orange-500 text-white px-4 py-2 rounded-md" onclick="openRegenerateModal()">
+            Regenerate History
+        </button>
+    </div>
+</div>
+
+{% if message %}
+<div class="{% if message_type == 'error' %}bg-red-100 border-red-400 text-red-700{% else %}bg-green-100 border-green-400 text-green-700{% endif %} px-4 py-3 rounded mb-4">
+    {{ message }}
+</div>
+{% endif %}
+
+<!-- Statistics Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    {% if stats %}
+    <div class="bg-white p-4 rounded-lg shadow-sm">
+        <div class="text-sm font-medium text-gray-500">Total Price History Entries</div>
+        <div class="text-2xl font-semibold mt-1">{{ stats.total_entries|default(0) }}</div>
+        <div class="text-xs text-gray-500 mt-1">Showing {{ stats.displayed_entries|default(0) }} entries</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow-sm">
+        <div class="text-sm font-medium text-gray-500">Unique Products & Locations</div>
+        <div class="text-2xl font-semibold mt-1">{{ stats.unique_products|default(0) }} products</div>
+        <div class="text-xs text-gray-500 mt-1">{{ stats.unique_locations|default(0) }} unique locations</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow-sm">
+        <div class="text-sm font-medium text-gray-500">Date Range</div>
+        <div class="text-2xl font-semibold mt-1">{{ stats.newest_date|default('N/A') }}</div>
+        <div class="text-xs text-gray-500 mt-1">From {{ stats.oldest_date|default('N/A') }}</div>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow-sm">
+        <div class="text-sm font-medium text-gray-500">Price Deviation</div>
+        <div class="text-2xl font-semibold mt-1">{{ stats.avg_deviation|default(0) }}%</div>
+        <div class="text-xs text-gray-500 mt-1">Range: {{ stats.min_deviation|default(0) }}% to {{ stats.max_deviation|default(0) }}%</div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Filter Form -->
+<div class="bg-white p-4 rounded-lg shadow-sm mb-6">
+    <h2 class="text-lg font-semibold mb-4">Filter Price History</h2>
+    <form action="{{ url_for('admin_price_history') }}" method="get" class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <label for="product_id" class="block text-sm font-medium text-gray-700 mb-1">Product</label>
+            <select id="product_id" name="product_id" class="w-full border rounded-md px-3 py-2">
+                <option value="">All Products</option>
+                {% for product in products %}
+                <option value="{{ product.id }}" {% if filter_product_id == product.id %}selected{% endif %}>
+                    {{ product.name }} ({{ product.category }})
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div>
+            <label for="city_id" class="block text-sm font-medium text-gray-700 mb-1">City</label>
+            <select id="city_id" name="city_id" class="w-full border rounded-md px-3 py-2" onchange="updateDistricts()">
+                <option value="">All Cities</option>
+                {% for city in locations.cities %}
+                <option value="{{ city.id }}" {% if filter_city_id == city.id %}selected{% endif %}>
+                    {{ city.name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div>
+            <label for="district_id" class="block text-sm font-medium text-gray-700 mb-1">District</label>
+            <select id="district_id" name="district_id" class="w-full border rounded-md px-3 py-2">
+                <option value="">All Districts</option>
+                {% if filter_city_id %}
+                {% for city in locations.cities %}
+                {% if city.id == filter_city_id %}
+                {% for district in city.districts %}
+                <option value="{{ district.id }}" {% if filter_district_id == district.id %}selected{% endif %}>
+                    {{ district.name }}
+                </option>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </select>
+        </div>
+        
+        <div>
+            <label for="days" class="block text-sm font-medium text-gray-700 mb-1">Days to Show</label>
+            <select id="days" name="days" class="w-full border rounded-md px-3 py-2">
+                <option value="5" {% if filter_days == 5 %}selected{% endif %}>Last 5 days</option>
+                <option value="10" {% if filter_days == 10 %}selected{% endif %}>Last 10 days</option>
+                <option value="30" {% if filter_days == 30 %}selected{% endif %}>Last 30 days</option>
+                <option value="90" {% if filter_days == 90 %}selected{% endif %}>Last 90 days</option>
+            </select>
+        </div>
+        
+        <div class="md:col-span-4 mt-2">
+            <button type="submit" class="bg-primary text-white px-4 py-2 rounded-md">
+                Apply Filters
+            </button>
+            <a href="{{ url_for('admin_price_history') }}" class="ml-2 text-gray-500 hover:text-gray-700">
+                Reset Filters
+            </a>
+        </div>
+    </form>
+</div>
+
+<!-- Price History Table -->
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+    <div class="p-4 border-b flex justify-between items-center">
+        <h2 class="text-lg font-semibold">Price History Data</h2>
+        <input type="text" id="searchInput" placeholder="Search..." class="border rounded-md px-3 py-2 w-64" onkeyup="searchTable()">
+    </div>
+    
+    <div class="overflow-x-auto">
+        <table class="w-full" id="historyTable">
+            <thead>
+                <tr class="bg-gray-50 border-b">
+                    <th class="text-left py-3 px-4">Date</th>
+                    <th class="text-left py-3 px-4">Product</th>
+                    <th class="text-left py-3 px-4">Category</th>
+                    <th class="text-left py-3 px-4">Location</th>
+                    <th class="text-right py-3 px-4">Base Price</th>
+                    <th class="text-right py-3 px-4">Loc. Factor</th>
+                    <th class="text-right py-3 px-4">Expected</th>
+                    <th class="text-right py-3 px-4">Actual</th>
+                    <th class="text-right py-3 px-4">Difference</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in price_history %}
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 px-4">{{ entry.date }}</td>
+                    <td class="py-3 px-4 font-medium">{{ entry.product_name }}</td>
+                    <td class="py-3 px-4">{{ entry.category }}</td>
+                    <td class="py-3 px-4">{{ entry.location }}</td>
+                    <td class="py-3 px-4 text-right">₹{{ entry.base_price }}</td>
+                    <td class="py-3 px-4 text-right">{{ entry.price_factor }}</td>
+                    <td class="py-3 px-4 text-right">₹{{ entry.expected_price }}</td>
+                    <td class="py-3 px-4 text-right font-medium">₹{{ entry.price }}</td>
+                    <td class="py-3 px-4 text-right 
+                        {% if entry.price > entry.expected_price %}text-green-600
+                        {% elif entry.price < entry.expected_price %}text-red-600
+                        {% else %}text-gray-500{% endif %}">
+                        {% set difference = entry.price - entry.expected_price %}
+                        {% if difference > 0 %}+{% endif %}₹{{ difference }}
+                        ({{ ((entry.price - entry.expected_price) / entry.expected_price * 100)|round(1) }}%)
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="9" class="py-8 text-center text-gray-500">
+                        No price history data found. Use the filters above to narrow your search or add new price entries.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    {% if price_history|length >= 500 %}
+    <div class="p-3 bg-yellow-50 text-yellow-800 text-sm border-t">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>
+        Displaying 500 entries. Apply filters to see more specific results.
+    </div>
+    {% endif %}
+</div>
+
+<!-- Add Price Entry Modal -->
+<div id="addEntryModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg w-full max-w-lg">
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-semibold">Add Price History Entry</h2>
+        </div>
+        <form action="{{ url_for('admin_price_history') }}" method="post">
+            <input type="hidden" name="action" value="add_price_entry">
+            <div class="p-6 space-y-4">
+                <div>
+                    <label for="add_product_id" class="block text-sm font-medium text-gray-700 mb-1">Product</label>
+                    <select id="add_product_id" name="product_id" required class="w-full border rounded-md px-3 py-2">
+                        <option value="">Select Product</option>
+                        {% for product in products %}
+                        <option value="{{ product.id }}">{{ product.name }} ({{ product.category }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="add_city_id" class="block text-sm font-medium text-gray-700 mb-1">City</label>
+                        <select id="add_city_id" name="city_id" required class="w-full border rounded-md px-3 py-2" onchange="updateAddDistricts()">
+                            <option value="">Select City</option>
+                            {% for city in locations.cities %}
+                            <option value="{{ city.id }}">{{ city.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div>
+                        <label for="add_district_id" class="block text-sm font-medium text-gray-700 mb-1">District</label>
+                        <select id="add_district_id" name="district_id" required class="w-full border rounded-md px-3 py-2">
+                            <option value="">Select District</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="add_date" class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                        <input type="date" id="add_date" name="date" required class="w-full border rounded-md px-3 py-2" value="{{ stats.newest_date|default(None) }}">
+                    </div>
+                    <div>
+                        <label for="add_price" class="block text-sm font-medium text-gray-700 mb-1">Price (₹)</label>
+                        <input type="number" id="add_price" name="price" required min="1" step="1" class="w-full border rounded-md px-3 py-2">
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 border-t flex justify-end space-x-3">
+                <button type="button" class="px-4 py-2 border rounded-md" onclick="closeAddEntryModal()">Cancel</button>
+                <button type="submit" class="px-4 py-2 bg-primary text-white rounded-md">Add Entry</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Regenerate History Modal -->
+<div id="regenerateModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg w-full max-w-md">
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-semibold">Regenerate Price History</h2>
+        </div>
+        <form action="{{ url_for('admin_price_history') }}" method="post">
+            <input type="hidden" name="action" value="regenerate_history">
+            <div class="p-6">
+                <div class="bg-yellow-50 text-yellow-800 p-4 rounded-md mb-4">
+                    <p class="font-medium">Warning: This will delete all existing price history data!</p>
+                    <p class="mt-2 text-sm">This operation will generate new random price history data for all products in all locations for the specified number of days.</p>
+                </div>
+                
+                <div>
+                    <label for="days_to_generate" class="block text-sm font-medium text-gray-700 mb-1">Days to Generate</label>
+                    <select id="days_to_generate" name="days_to_generate" class="w-full border rounded-md px-3 py-2">
+                        <option value="5">5 days</option>
+                        <option value="10" selected>10 days</option>
+                        <option value="30">30 days</option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-6 border-t flex justify-end space-x-3">
+                <button type="button" class="px-4 py-2 border rounded-md" onclick="closeRegenerateModal()">Cancel</button>
+                <button type="submit" class="px-4 py-2 bg-red-500 text-white rounded-md" 
+                   onclick="return confirm('Are you absolutely sure? All existing price history data will be permanently deleted!')">
+                   Regenerate All Data
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Filter districts based on selected city
+    function updateDistricts() {
+        const cityId = document.getElementById('city_id').value;
+        const districtSelect = document.getElementById('district_id');
+        
+        // Clear all options except the first one
+        while (districtSelect.options.length > 1) {
+            districtSelect.remove(1);
+        }
+        
+        if (!cityId) {
+            return;
+        }
+        
+        // Get city data
+        const cities = {{ locations.cities|tojson }};
+        const selectedCity = cities.find(city => city.id == cityId);
+        
+        if (selectedCity && selectedCity.districts) {
+            for (const district of selectedCity.districts) {
+                const option = new Option(district.name, district.id);
+                districtSelect.add(option);
+            }
+        }
+    }
+    
+    // Same function for the add entry modal
+    function updateAddDistricts() {
+        const cityId = document.getElementById('add_city_id').value;
+        const districtSelect = document.getElementById('add_district_id');
+        
+        // Clear all options except the first one
+        while (districtSelect.options.length > 1) {
+            districtSelect.remove(1);
+        }
+        
+        if (!cityId) {
+            return;
+        }
+        
+        // Get city data
+        const cities = {{ locations.cities|tojson }};
+        const selectedCity = cities.find(city => city.id == cityId);
+        
+        if (selectedCity && selectedCity.districts) {
+            for (const district of selectedCity.districts) {
+                const option = new Option(district.name, district.id);
+                districtSelect.add(option);
+            }
+        }
+    }
+    
+    // Search the table
+    function searchTable() {
+        const searchText = document.getElementById('searchInput').value.toLowerCase();
+        const table = document.getElementById('historyTable');
+        const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+        
+        for (let i = 0; i < rows.length; i++) {
+            if (rows[i].cells.length < 2) continue; // Skip empty rows
+            
+            const product = rows[i].cells[1].textContent.toLowerCase();
+            const category = rows[i].cells[2].textContent.toLowerCase();
+            const location = rows[i].cells[3].textContent.toLowerCase();
+            
+            if (product.includes(searchText) || 
+                category.includes(searchText) || 
+                location.includes(searchText)) {
+                rows[i].style.display = '';
+            } else {
+                rows[i].style.display = 'none';
+            }
+        }
+    }
+    
+    // Modal control functions
+    function openAddEntryModal() {
+        document.getElementById('addEntryModal').classList.remove('hidden');
+    }
+    
+    function closeAddEntryModal() {
+        document.getElementById('addEntryModal').classList.add('hidden');
+    }
+    
+    function openRegenerateModal() {
+        document.getElementById('regenerateModal').classList.remove('hidden');
+    }
+    
+    function closeRegenerateModal() {
+        document.getElementById('regenerateModal').classList.add('hidden');
+    }
+    
+    // Set today's date as default for the date field
+    document.addEventListener('DOMContentLoaded', function() {
+        const today = new Date().toISOString().split('T')[0];
+        if (!document.getElementById('add_date').value) {
+            document.getElementById('add_date').value = today;
+        }
+    });
+</script>
+{% endblock %} 
