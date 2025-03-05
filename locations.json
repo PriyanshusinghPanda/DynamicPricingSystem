@@ -1,0 +1,83 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "Delhi",
+      "districts": [
+        {
+          "id": 101,
+          "name": "South Delhi",
+          "price_factor": 0.8
+        },
+        {
+          "id": 102,
+          "name": "North Delhi",
+          "price_factor": 0.9
+        },
+        {
+          "id": 103,
+          "name": "East Delhi",
+          "price_factor": 0.95
+        },
+        {
+          "id": 104,
+          "name": "West Delhi",
+          "price_factor": 0.83
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mumbai",
+      "districts": [
+        {
+          "id": 201,
+          "name": "Andheri",
+          "price_factor": 0.75
+        },
+        {
+          "id": 202,
+          "name": "Bandra",
+          "price_factor": 0.8
+        },
+        {
+          "id": 203,
+          "name": "Dadar",
+          "price_factor": 0.83
+        },
+        {
+          "id": 204,
+          "name": "Borivali",
+          "price_factor": 0.89
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bangalore",
+      "districts": [
+        {
+          "id": 301,
+          "name": "Koramangala",
+          "price_factor": 0.79
+        },
+        {
+          "id": 302,
+          "name": "Indiranagar",
+          "price_factor": 0.96
+        },
+        {
+          "id": 303,
+          "name": "Whitefield",
+          "price_factor": 0.91
+        },
+        {
+          "id": 304,
+          "name": "Electronic City",
+          "price_factor": 0.85
+        }
+      ]
+    }
+  ]
+}
+

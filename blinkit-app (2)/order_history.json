@@ -1,0 +1,350 @@
+{
+  "orders": [
+    {
+      "id": 1001,
+      "user_id": 1,
+      "date": "2023-10-15",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 2,
+          "price": 110
+        },
+        {
+          "product_id": 201,
+          "quantity": 1,
+          "price": 55
+        }
+      ],
+      "total": 275,
+      "status": "delivered"
+    },
+    {
+      "id": 1002,
+      "user_id": 2,
+      "date": "2023-10-16",
+      "location": {
+        "city_id": 1,
+        "district_id": 102
+      },
+      "items": [
+        {
+          "product_id": 102,
+          "quantity": 3,
+          "price": 58
+        },
+        {
+          "product_id": 301,
+          "quantity": 2,
+          "price": 28
+        }
+      ],
+      "total": 230,
+      "status": "delivered"
+    },
+    {
+      "id": 1003,
+      "user_id": 1,
+      "date": "2023-10-18",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 1,
+          "price": 112
+        },
+        {
+          "product_id": 103,
+          "quantity": 2,
+          "price": 38
+        }
+      ],
+      "total": 188,
+      "status": "delivered"
+    },
+    {
+      "id": 1004,
+      "user_id": 3,
+      "date": "2023-10-20",
+      "location": {
+        "city_id": 2,
+        "district_id": 201
+      },
+      "items": [
+        {
+          "product_id": 201,
+          "quantity": 2,
+          "price": 52
+        },
+        {
+          "product_id": 202,
+          "quantity": 1,
+          "price": 75
+        }
+      ],
+      "total": 179,
+      "status": "delivered"
+    },
+    {
+      "id": 1005,
+      "user_id": 1,
+      "date": "2023-10-22",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 2,
+          "price": 115
+        }
+      ],
+      "total": 230,
+      "status": "delivered"
+    },
+    {
+      "id": 1006,
+      "user_id": 4,
+      "date": "2023-10-23",
+      "location": {
+        "city_id": 3,
+        "district_id": 301
+      },
+      "items": [
+        {
+          "product_id": 301,
+          "quantity": 3,
+          "price": 27
+        },
+        {
+          "product_id": 302,
+          "quantity": 2,
+          "price": 38
+        }
+      ],
+      "total": 157,
+      "status": "delivered"
+    },
+    {
+      "id": 1007,
+      "user_id": 2,
+      "date": "2023-10-25",
+      "location": {
+        "city_id": 1,
+        "district_id": 102
+      },
+      "items": [
+        {
+          "product_id": 102,
+          "quantity": 2,
+          "price": 57
+        },
+        {
+          "product_id": 202,
+          "quantity": 1,
+          "price": 78
+        }
+      ],
+      "total": 192,
+      "status": "delivered"
+    },
+    {
+      "id": 1008,
+      "user_id": 1,
+      "date": "2023-10-27",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 1,
+          "price": 118
+        },
+        {
+          "product_id": 301,
+          "quantity": 2,
+          "price": 29
+        }
+      ],
+      "total": 176,
+      "status": "delivered"
+    },
+    {
+      "id": 1009,
+      "user_id": 3,
+      "date": "2023-10-28",
+      "location": {
+        "city_id": 2,
+        "district_id": 201
+      },
+      "items": [
+        {
+          "product_id": 201,
+          "quantity": 1,
+          "price": 54
+        }
+      ],
+      "total": 54,
+      "status": "delivered"
+    },
+    {
+      "id": 1010,
+      "user_id": 1,
+      "date": "2023-10-30",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 2,
+          "price": 120
+        },
+        {
+          "product_id": 102,
+          "quantity": 1,
+          "price": 60
+        }
+      ],
+      "total": 300,
+      "status": "delivered"
+    },
+    {
+      "id": 1011,
+      "user_id": 6,
+      "date": "2025-03-05",
+      "location": {
+        "city_id": 1,
+        "district_id": 103
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "name": "Fresh Applesss",
+          "price": 114,
+          "quantity": 18,
+          "subtotal": 2052
+        }
+      ],
+      "total": 2052,
+      "status": "pending",
+      "payment_method": "cod"
+    },
+    {
+      "id": 1012,
+      "user_id": 6,
+      "date": "2025-03-05",
+      "location": {
+        "city_id": 1,
+        "district_id": 103
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "name": "Fresh Applesss",
+          "price": 114,
+          "quantity": 23,
+          "subtotal": 2622
+        }
+      ],
+      "total": 2622,
+      "status": "pending",
+      "payment_method": "cod"
+    },
+    {
+      "id": 1013,
+      "user_id": 8,
+      "date": "2025-03-05",
+      "location": {
+        "city_id": 2,
+        "district_id": 201
+      },
+      "items": [
+        {
+          "product_id": 101,
+          "name": "Fresh Applesss",
+          "price": 90,
+          "quantity": 3,
+          "subtotal": 270
+        }
+      ],
+      "total": 270,
+      "status": "pending",
+      "payment_method": "cod"
+    },
+    {
+      "id": 1014,
+      "user_id": 8,
+      "date": "2025-03-06",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 201,
+          "name": "Milk",
+          "price": 48,
+          "quantity": 3,
+          "subtotal": 144
+        }
+      ],
+      "total": 144,
+      "status": "pending",
+      "payment_method": "cod"
+    },
+    {
+      "id": 1015,
+      "user_id": 8,
+      "date": "2025-03-06",
+      "location": {
+        "city_id": 1,
+        "district_id": 101
+      },
+      "items": [
+        {
+          "product_id": 202,
+          "name": "Eggs",
+          "price": 64,
+          "quantity": 2,
+          "subtotal": 128
+        }
+      ],
+      "total": 128,
+      "status": "pending",
+      "payment_method": "cod"
+    },
+    {
+      "id": 1016,
+      "user_id": 8,
+      "date": "2025-03-06",
+      "location": {
+        "city_id": 2,
+        "district_id": 203
+      },
+      "items": [
+        {
+          "product_id": 201,
+          "name": "Milk",
+          "price": 50,
+          "quantity": 1,
+          "subtotal": 50
+        }
+      ],
+      "total": 50,
+      "status": "pending",
+      "payment_method": "cod"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{% extends 'admin_layout.html' %}
+
+{% block title %}Admin Dashboard - Blinkit Clone{% endblock %}
+
+{% block admin_content %}
+<div class="mb-6">
+    <h1 class="text-2xl font-bold">Admin Dashboard</h1>
+    <p class="text-gray-500">Welcome back, {{ admin_user.username }}</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-2">Total Orders</h2>
+        <p class="text-3xl font-bold">{{ stats.total_orders }}</p>
+        <p class="text-sm text-gray-500">{{ stats.orders_today }} today</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-2">Total Revenue</h2>
+        <p class="text-3xl font-bold">₹{{ stats.total_revenue }}</p>
+        <p class="text-sm text-gray-500">₹{{ stats.revenue_today }} today</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-2">Total Users</h2>
+        <p class="text-3xl font-bold">{{ stats.total_users }}</p>
+        <p class="text-sm text-gray-500">{{ stats.new_users_today }} new today</p>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-4">Recent Orders</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead>
+                    <tr class="border-b">
+                        <th class="text-left pb-3">Order ID</th>
+                        <th class="text-left pb-3">User</th>
+                        <th class="text-left pb-3">Date</th>
+                        <th class="text-right pb-3">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in recent_orders %}
+                    <tr class="border-b">
+                        <td class="py-3">#{{ order.id }}</td>
+                        <td class="py-3">{{ order.user_name }}</td>
+                        <td class="py-3">{{ order.date }}</td>
+                        <td class="py-3 text-right">₹{{ order.amount }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-4 text-right">
+            <a href="{{ url_for('admin_orders') }}" class="text-primary font-medium">View all orders →</a>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-4">Price Prediction Analytics</h2>
+        <div class="mb-4">
+            <h3 class="font-medium mb-2">Top Products with Price Fluctuations</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="text-left pb-3">Product</th>
+                            <th class="text-left pb-3">Location</th>
+                            <th class="text-right pb-3">Predicted Price</th>
+                            <th class="text-right pb-3">Current Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product in price_predictions %}
+                        <tr class="border-b">
+                            <td class="py-3">{{ product.name }}</td>
+                            <td class="py-3">{{ product.location }}</td>
+                            <td class="py-3 text-right">₹{{ product.predicted_price }}</td>
+                            <td class="py-3 text-right">₹{{ product.current_price }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mt-4 text-right">
+            <a href="{{ url_for('admin_price_analytics') }}" class="text-primary font-medium">View detailed analytics →</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

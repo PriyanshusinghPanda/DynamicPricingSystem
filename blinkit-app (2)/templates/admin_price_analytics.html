@@ -1,0 +1,191 @@
+{% extends 'admin_layout.html' %}
+
+{% block title %}Price Analytics - Admin Panel{% endblock %}
+
+{% block admin_content %}
+<div class="mb-6">
+    <h1 class="text-2xl font-bold">Price Prediction Analytics</h1>
+    <p class="text-gray-500">Analyze price trends and predictions across different locations</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-2">Average Price Fluctuation</h2>
+        <p class="text-3xl font-bold">±{{ stats.avg_fluctuation }}%</p>
+        <p class="text-sm text-gray-500">Across all products and locations</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-2">Most Volatile Product</h2>
+        <p class="text-xl font-bold">{{ stats.most_volatile_product }}</p>
+        <p class="text-sm text-gray-500">{{ stats.most_volatile_fluctuation }}% price variation</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-2">Most Stable Location</h2>
+        <p class="text-xl font-bold">{{ stats.most_stable_location }}</p>
+        <p class="text-sm text-gray-500">{{ stats.most_stable_fluctuation }}% average fluctuation</p>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-4">Price Prediction Accuracy</h2>
+        <div class="h-64 w-full">
+            <!-- Canvas for chart -->
+            <canvas id="accuracyChart"></canvas>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+        <h2 class="text-lg font-semibold mb-4">Price Trends by Location</h2>
+        <div class="h-64 w-full">
+            <!-- Canvas for chart -->
+            <canvas id="locationTrendsChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+    <div class="p-4 border-b">
+        <h2 class="text-lg font-semibold">Product Price Predictions</h2>
+    </div>
+    
+    <div class="p-4 border-b">
+        <div class="flex flex-wrap items-center gap-4">
+            <select id="categoryFilter" class="border rounded-md px-3 py-2">
+                <option value="">All Categories</option>
+                {% for category in categories %}
+                <option value="{{ category.id }}">{{ category.name }}</option>
+                {% endfor %}
+            </select>
+            
+            <select id="locationFilter" class="border rounded-md px-3 py-2">
+                <option value="">All Locations</option>
+                {% for city in cities %}
+                <option value="{{ city.id }}">{{ city.name }}</option>
+                {% endfor %}
+            </select>
+            
+            <button id="applyFilters" class="bg-primary text-white px-4 py-2 rounded-md">
+                Apply Filters
+            </button>
+        </div>
+    </div>
+    
+    <div class="overflow-x-auto">
+        <table class="w-full">
+            <thead>
+                <tr class="bg-gray-50 border-b">
+                    <th class="text-left py-3 px-4">Product</th>
+                    <th class="text-left py-3 px-4">Category</th>
+                    <th class="text-left py-3 px-4">Location</th>
+                    <th class="text-right py-3 px-4">Base Price</th>
+                    <th class="text-right py-3 px-4">Predicted Price</th>
+                    <th class="text-right py-3 px-4">Actual Price</th>
+                    <th class="text-right py-3 px-4">Accuracy</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prediction in predictions %}
+                <tr class="border-b">
+                    <td class="py-3 px-4">{{ prediction.product_name }}</td>
+                    <td class="py-3 px-4">{{ prediction.category }}</td>
+                    <td class="py-3 px-4">{{ prediction.location }}</td>
+                    <td class="py-3 px-4 text-right">₹{{ prediction.base_price }}</td>
+                    <td class="py-3 px-4 text-right">₹{{ prediction.predicted_price }}</td>
+                    <td class="py-3 px-4 text-right">₹{{ prediction.actual_price }}</td>
+                    <td class="py-3 px-4 text-right">
+                        <span class="px-2 py-1 rounded-full text-xs 
+                            {% if prediction.accuracy >= 95 %}bg-green-100 text-green-800
+                            {% elif prediction.accuracy >= 85 %}bg-blue-100 text-blue-800
+                            {% elif prediction.accuracy >= 75 %}bg-yellow-100 text-yellow-800
+                            {% else %}bg-red-100 text-red-800{% endif %}">
+                            {{ prediction.accuracy }}%
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Initialize charts when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        // Accuracy Chart
+        const accuracyCtx = document.getElementById('accuracyChart').getContext('2d');
+        const accuracyChart = new Chart(accuracyCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+                datasets: [{
+                    label: 'Prediction Accuracy',
+                    data: [85, 87, 88, 90, 89, 91, 92, 93, 94, 95],
+                    borderColor: '#10b981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 80,
+                        max: 100
+                    }
+                }
+            }
+        });
+        
+        // Location Trends Chart
+        const locationCtx = document.getElementById('locationTrendsChart').getContext('2d');
+        const locationChart = new Chart(locationCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Delhi', 'Mumbai', 'Bangalore', 'Hyderabad', 'Chennai'],
+                datasets: [{
+                    label: 'Average Price Fluctuation (%)',
+                    data: [12, 8, 15, 10, 7],
+                    backgroundColor: [
+                        'rgba(16, 185, 129, 0.7)',
+                        'rgba(245, 158, 11, 0.7)',
+                        'rgba(59, 130, 246, 0.7)',
+                        'rgba(139, 92, 246, 0.7)',
+                        'rgba(239, 68, 68, 0.7)'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    });
+    
+    // Filter functionality
+    document.getElementById('applyFilters').addEventListener('click', function() {
+        const categoryId = document.getElementById('categoryFilter').value;
+        const locationId = document.getElementById('locationFilter').value;
+        
+        // Redirect with filter parameters
+        window.location.href = `/admin/price-analytics?category=${categoryId}&location=${locationId}`;
+    });
+</script>
+{% endblock %}
+

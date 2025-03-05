@@ -1,0 +1,351 @@
+{% extends 'admin_layout.html' %}
+
+{% block title %}Manage Products - Admin Panel{% endblock %}
+
+{% block admin_content %}
+<div class="mb-6 grid grid-cols-2 gap-4">
+    <div>
+        <h1 class="text-2xl font-bold">Manage Products</h1>
+    </div>
+    <div class="flex justify-end gap-2">
+        <button class="bg-green-600 text-white px-4 py-2 rounded-md" onclick="openAddCategoryModal()">
+            Add New Category
+        </button>
+        <button class="bg-primary text-white px-4 py-2 rounded-md" onclick="openAddProductModal()">
+            Add New Product
+        </button>
+    </div>
+</div>
+
+{% if message %}
+<div class="{% if message_type == 'error' %}bg-red-100 border-red-400 text-red-700{% else %}bg-green-100 border-green-400 text-green-700{% endif %} px-4 py-3 rounded mb-4">
+    {{ message }}
+</div>
+{% endif %}
+
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+    <div class="p-4 border-b">
+        <div class="flex items-center">
+            <input type="text" id="searchInput" placeholder="Search products..." class="border rounded-md px-3 py-2 w-full max-w-md" onkeyup="searchProducts()">
+        </div>
+    </div>
+    
+    <div class="overflow-x-auto">
+        <table class="w-full" id="productTable">
+            <thead>
+                <tr class="bg-gray-50 border-b">
+                    <th class="text-left py-3 px-4">ID</th>
+                    <th class="text-left py-3 px-4">Image</th>
+                    <th class="text-left py-3 px-4">Name</th>
+                    <th class="text-left py-3 px-4">Category</th>
+                    <th class="text-left py-3 px-4">Base Price</th>
+                    <th class="text-left py-3 px-4">Unit</th>
+                    <th class="text-left py-3 px-4">Inventory</th>
+                    <th class="text-left py-3 px-4">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                <tr class="border-b">
+                    <td class="py-3 px-4">{{ product.id }}</td>
+                    <td class="py-3 px-4">
+                        <img src="{{ product.image }}" alt="{{ product.name }}" class="w-12 h-12 object-contain">
+                    </td>
+                    <td class="py-3 px-4">{{ product.name }}</td>
+                    <td class="py-3 px-4">{{ product.category }}</td>
+                    <td class="py-3 px-4">₹{{ product.price }}</td>
+                    <td class="py-3 px-4">{{ product.unit }}</td>
+                    <td class="py-3 px-4">
+                        <button class="text-blue-500 hover:text-blue-700" onclick="openInventoryModal({{ product.id }}, '{{ product.name }}')">
+                            {% if product.inventory|length > 0 %}
+                                {{ product.inventory|length }} location(s)
+                            {% else %}
+                                Set inventory
+                            {% endif %}
+                        </button>
+                    </td>
+                    <td class="py-3 px-4">
+                        <div class="flex space-x-2">
+                            <button class="text-blue-500 hover:text-blue-700" onclick="openEditProductModal({{ product.id }})">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                </svg>
+                            </button>
+                            <button class="text-red-500 hover:text-red-700" onclick="confirmDeleteProduct({{ product.id }})">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Add/Edit Product Modal (hidden by default) -->
+<div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg w-full max-w-2xl">
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-semibold" id="modalTitle">Add New Product</h2>
+        </div>
+        <form id="productForm" action="{{ url_for('admin_products') }}" method="post">
+            <input type="hidden" name="action" value="add_product">
+            <input type="hidden" id="product_id" name="product_id" value="">
+            <div class="p-6 space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
+                        <input type="text" id="name" name="name" required class="w-full border rounded-md px-3 py-2">
+                    </div>
+                    <div>
+                        <label for="category_id" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                        <select id="category_id" name="category_id" required class="w-full border rounded-md px-3 py-2">
+                            {% for category in categories %}
+                            <option value="{{ category.id }}">{{ category.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="price" class="block text-sm font-medium text-gray-700 mb-1">Base Price (₹)</label>
+                        <input type="number" id="price" name="price" step="0.01" required class="w-full border rounded-md px-3 py-2">
+                    </div>
+                    <div>
+                        <label for="unit" class="block text-sm font-medium text-gray-700 mb-1">Unit</label>
+                        <input type="text" id="unit" name="unit" required class="w-full border rounded-md px-3 py-2" placeholder="e.g., 1 kg, 500 g, 6 pcs">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                    <textarea id="description" name="description" rows="3" class="w-full border rounded-md px-3 py-2"></textarea>
+                </div>
+                
+                <div>
+                    <label for="image" class="block text-sm font-medium text-gray-700 mb-1">Product Image URL</label>
+                    <input type="text" id="image" name="image" class="w-full border rounded-md px-3 py-2" placeholder="/placeholder.svg?height=200&width=200">
+                </div>
+            </div>
+            <div class="p-6 border-t flex justify-end space-x-3">
+                <button type="button" class="px-4 py-2 border rounded-md" onclick="closeProductModal()">Cancel</button>
+                <button type="submit" class="px-4 py-2 bg-primary text-white rounded-md">Save Product</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Add Category Modal (hidden by default) -->
+<div id="categoryModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg w-full max-w-md">
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-semibold">Add New Category</h2>
+        </div>
+        <form action="{{ url_for('admin_products') }}" method="post">
+            <input type="hidden" name="action" value="add_category">
+            <div class="p-6 space-y-4">
+                <div>
+                    <label for="category_name" class="block text-sm font-medium text-gray-700 mb-1">Category Name</label>
+                    <input type="text" id="category_name" name="name" required class="w-full border rounded-md px-3 py-2">
+                </div>
+                <div>
+                    <label for="category_image" class="block text-sm font-medium text-gray-700 mb-1">Category Image URL</label>
+                    <input type="text" id="category_image" name="image" class="w-full border rounded-md px-3 py-2" 
+                           placeholder="/placeholder.svg?height=80&width=80">
+                </div>
+            </div>
+            <div class="p-6 border-t flex justify-end space-x-3">
+                <button type="button" class="px-4 py-2 border rounded-md" onclick="closeCategoryModal()">Cancel</button>
+                <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded-md">Add Category</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Inventory Modal (hidden by default) -->
+<div id="inventoryModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg w-full max-w-3xl">
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-semibold">Manage Inventory: <span id="inventory_product_name"></span></h2>
+        </div>
+        
+        <div class="p-6">
+            <!-- Current Inventory Display -->
+            <div id="currentInventorySection" class="mb-6">
+                <h3 class="font-medium mb-3">Current Inventory</h3>
+                <div id="currentInventory" class="space-y-2 max-h-40 overflow-y-auto">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Add/Update Inventory Form -->
+            <form id="inventoryForm" action="{{ url_for('admin_products') }}" method="post">
+                <input type="hidden" name="action" value="update_inventory">
+                <input type="hidden" id="inventory_product_id" name="product_id" value="">
+                
+                <h3 class="font-medium mb-3">Add/Update Inventory</h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <div>
+                        <label for="city_id" class="block text-sm font-medium text-gray-700 mb-1">City</label>
+                        <select id="city_id" name="city_id" required class="w-full border rounded-md px-3 py-2" onchange="updateDistricts()">
+                            {% for city in locations_data.cities %}
+                            <option value="{{ city.id }}">{{ city.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div>
+                        <label for="district_id" class="block text-sm font-medium text-gray-700 mb-1">District</label>
+                        <select id="district_id" name="district_id" required class="w-full border rounded-md px-3 py-2">
+                            <!-- Districts will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" required class="w-full border rounded-md px-3 py-2" min="0">
+                    </div>
+                </div>
+                
+                <div class="mt-4 flex justify-end">
+                    <button type="submit" class="px-4 py-2 bg-primary text-white rounded-md">Update Inventory</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="p-4 border-t flex justify-end">
+            <button type="button" class="px-4 py-2 border rounded-md" onclick="closeInventoryModal()">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const locations = {{ locations_data|tojson }};
+    const products = {{ products|tojson }};
+
+    function openAddProductModal() {
+        document.getElementById('modalTitle').textContent = 'Add New Product';
+        document.getElementById('productForm').reset();
+        document.getElementById('productForm').querySelector('input[name="action"]').value = 'add_product';
+        document.getElementById('productModal').classList.remove('hidden');
+    }
+    
+    function openEditProductModal(productId) {
+        document.getElementById('modalTitle').textContent = 'Edit Product';
+        document.getElementById('productForm').querySelector('input[name="action"]').value = 'edit_product';
+        document.getElementById('product_id').value = productId;
+        
+        const product = products.find(p => p.id === productId);
+        if (product) {
+            document.getElementById('name').value = product.name;
+            document.getElementById('category_id').value = product.category_id;
+            document.getElementById('price').value = product.price;
+            document.getElementById('unit').value = product.unit;
+            document.getElementById('description').value = product.description;
+            document.getElementById('image').value = product.image;
+        }
+        
+        document.getElementById('productModal').classList.remove('hidden');
+    }
+    
+    function closeProductModal() {
+        document.getElementById('productModal').classList.add('hidden');
+    }
+    
+    function openAddCategoryModal() {
+        document.getElementById('categoryModal').classList.remove('hidden');
+    }
+    
+    function closeCategoryModal() {
+        document.getElementById('categoryModal').classList.add('hidden');
+    }
+    
+    function confirmDeleteProduct(productId) {
+        if (confirm('Are you sure you want to delete this product?')) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = `/admin/products/delete/${productId}`;
+            document.body.appendChild(form);
+            form.submit();
+        }
+    }
+
+    function openInventoryModal(productId, productName) {
+        document.getElementById('inventory_product_id').value = productId;
+        document.getElementById('inventory_product_name').textContent = productName;
+        
+        // Display current inventory
+        const product = products.find(p => p.id === productId);
+        const inventoryContainer = document.getElementById('currentInventory');
+        inventoryContainer.innerHTML = '';
+        
+        if (product && product.inventory && product.inventory.length > 0) {
+            document.getElementById('currentInventorySection').classList.remove('hidden');
+            product.inventory.forEach(inv => {
+                const item = document.createElement('div');
+                item.className = 'flex justify-between items-center p-2 bg-gray-50 rounded';
+                item.innerHTML = `
+                    <span>${inv.location}</span>
+                    <span>Quantity: <strong>${inv.quantity}</strong></span>
+                `;
+                inventoryContainer.appendChild(item);
+            });
+        } else {
+            document.getElementById('currentInventorySection').classList.add('hidden');
+        }
+        
+        // Initialize districts dropdown
+        updateDistricts();
+        
+        document.getElementById('inventoryModal').classList.remove('hidden');
+    }
+
+    function closeInventoryModal() {
+        document.getElementById('inventoryModal').classList.add('hidden');
+    }
+
+    function updateDistricts() {
+        const cityId = parseInt(document.getElementById('city_id').value);
+        const districtSelect = document.getElementById('district_id');
+        
+        districtSelect.innerHTML = '';
+        
+        const city = locations.cities.find(c => c.id === cityId);
+        if (city) {
+            city.districts.forEach(district => {
+                const option = document.createElement('option');
+                option.value = district.id;
+                option.textContent = district.name;
+                districtSelect.appendChild(option);
+            });
+        }
+    }
+    
+    function searchProducts() {
+        const searchText = document.getElementById('searchInput').value.toLowerCase();
+        const table = document.getElementById('productTable');
+        const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+        
+        for (let i = 0; i < rows.length; i++) {
+            const name = rows[i].getElementsByTagName('td')[2].textContent.toLowerCase();
+            const category = rows[i].getElementsByTagName('td')[3].textContent.toLowerCase();
+            
+            if (name.includes(searchText) || category.includes(searchText)) {
+                rows[i].style.display = '';
+            } else {
+                rows[i].style.display = 'none';
+            }
+        }
+    }
+    
+    // Initialize districts dropdown on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        updateDistricts();
+    });
+</script>
+{% endblock %}
+

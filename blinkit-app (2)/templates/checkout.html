@@ -1,0 +1,108 @@
+{% extends 'layout.html' %}
+
+{% block title %}Checkout - Blinkit Clone{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+    <h1 class="text-2xl font-bold">Checkout</h1>
+</div>
+
+{% if get_flashed_messages() %}
+<div class="mb-4 p-4 {% if 'error' in get_flashed_messages()[0] %}bg-red-100 text-red-800{% else %}bg-green-100 text-green-800{% endif %} rounded-md">
+    {{ get_flashed_messages()[0] }}
+</div>
+{% endif %}
+
+<form method="POST" action="{{ url_for('checkout') }}">
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-xl font-semibold mb-4">Delivery Address</h2>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                    <input type="text" id="firstName" name="firstName" value="{{ user.first_name }}" readonly class="w-full border rounded-md px-3 py-2 bg-gray-50">
+                </div>
+                <div>
+                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" value="{{ user.last_name }}" readonly class="w-full border rounded-md px-3 py-2 bg-gray-50">
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input type="tel" id="phone" name="phone" value="{{ user.phone }}" readonly class="w-full border rounded-md px-3 py-2 bg-gray-50">
+            </div>
+            
+            <div class="mb-4">
+                <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                <textarea id="address" name="address" rows="3" readonly class="w-full border rounded-md px-3 py-2 bg-gray-50">{{ user.address }}</textarea>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">City / District</label>
+                    <input type="text" value="{{ location.city.name }} / {{ location.district.name }}" readonly class="w-full border rounded-md px-3 py-2 bg-gray-50">
+                </div>
+                <div>
+                    <label for="pincode" class="block text-sm font-medium text-gray-700 mb-1">Pincode</label>
+                    <input type="text" id="pincode" name="pincode" value="{{ user.pincode }}" readonly class="w-full border rounded-md px-3 py-2 bg-gray-50">
+                </div>
+            </div>
+            
+            <div class="mt-6">
+                <a href="{{ url_for('profile') }}" class="text-primary">Edit address in profile</a>
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
+            
+            <div class="mb-4">
+                <h3 class="font-medium mb-2">Items ({{ cart_items|length }})</h3>
+                <div class="space-y-2">
+                    {% for item in cart_items %}
+                    <div class="flex justify-between text-sm">
+                        <span>{{ item.name }} × {{ item.quantity }}</span>
+                        <span>₹{{ item.subtotal }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="border-b pb-4 mb-4">
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-600">Items Total</span>
+                    <span>₹{{ total }}</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-600">Delivery Fee</span>
+                    <span>₹40</span>
+                </div>
+            </div>
+            
+            <div class="flex justify-between font-bold text-lg mb-6">
+                <span>Total</span>
+                <span>₹{{ total + 40 }}</span>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium mb-2">Payment Method</h3>
+                <div class="space-y-2">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="payment_method" value="cod" checked>
+                        <span>Cash on Delivery</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="payment_method" value="online" disabled>
+                        <span class="text-gray-500">Online Payment (Coming Soon)</span>
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md font-medium">Place Order</button>
+            <p class="text-center text-gray-500 text-sm mt-4">This is a demo app. No actual order will be placed.</p>
+        </div>
+    </div>
+</form>
+{% endblock %}
+

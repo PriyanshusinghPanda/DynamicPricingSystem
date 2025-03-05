@@ -1,0 +1,176 @@
+{% extends 'layout.html' %}
+
+{% block title %}My Profile - Blinkit Clone{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-6 mt-8 mb-8">
+    <h1 class="text-2xl font-bold mb-6">My Profile</h1>
+    
+    {% if get_flashed_messages() %}
+    <div class="mb-4 p-4 {% if 'error' in get_flashed_messages()[0] %}bg-red-100 text-red-800{% else %}bg-green-100 text-green-800{% endif %} rounded-md">
+        {{ get_flashed_messages()[0] }}
+    </div>
+    {% endif %}
+    
+    <div class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Personal Information</h2>
+        <p><span class="font-medium">Name:</span> {{ user.first_name }} {{ user.last_name }}</p>
+        <p><span class="font-medium">Email:</span> {{ user.email }}</p>
+        <p><span class="font-medium">Phone:</span> {{ user.phone }}</p>
+    </div>
+    
+    <div class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Address</h2>
+        <p>{{ user.address or 'No address provided' }}</p>
+        <p>{{ location.city.name }}, {{ location.district.name }}</p>
+        <p>{{ user.pincode or 'No pincode provided' }}</p>
+    </div>
+    
+    <div class="mb-6">
+        <button id="editProfileBtn" class="bg-primary text-white px-4 py-2 rounded-md">Edit Profile</button>
+        <button id="changePasswordBtn" class="bg-gray-700 text-white px-4 py-2 rounded-md ml-2">Change Password</button>
+    </div>
+    
+    <!-- Edit Profile Form (Hidden by default) -->
+    <div id="editProfileForm" class="hidden bg-gray-50 p-4 rounded-md mb-6">
+        <h2 class="text-lg font-semibold mb-4">Edit Profile</h2>
+        <form method="POST" action="{{ url_for('profile') }}">
+            <input type="hidden" name="action" value="update_profile">
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">First Name</label>
+                    <input type="text" name="first_name" value="{{ user.first_name }}" required 
+                           class="w-full border border-gray-300 rounded-md p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Last Name</label>
+                    <input type="text" name="last_name" value="{{ user.last_name }}" required 
+                           class="w-full border border-gray-300 rounded-md p-2">
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Phone</label>
+                <input type="tel" name="phone" value="{{ user.phone }}" required 
+                       class="w-full border border-gray-300 rounded-md p-2">
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Address</label>
+                <textarea name="address" class="w-full border border-gray-300 rounded-md p-2" rows="2">{{ user.address }}</textarea>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">City</label>
+                    <select name="city_id" id="city_select" class="w-full border border-gray-300 rounded-md p-2">
+                        {% for city in locations.cities %}
+                        <option value="{{ city.id }}" {% if user.city_id == city.id %}selected{% endif %}>{{ city.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">District</label>
+                    <select name="district_id" id="district_select" class="w-full border border-gray-300 rounded-md p-2">
+                        {% for city in locations.cities %}
+                            {% if user.city_id == city.id %}
+                                {% for district in city.districts %}
+                                <option value="{{ district.id }}" {% if user.district_id == district.id %}selected{% endif %} 
+                                        data-city="{{ city.id }}">{{ district.name }}</option>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Pincode</label>
+                <input type="text" name="pincode" value="{{ user.pincode }}" 
+                       class="w-full border border-gray-300 rounded-md p-2">
+            </div>
+            
+            <div>
+                <button type="submit" class="bg-primary text-white px-4 py-2 rounded-md">Save Changes</button>
+                <button type="button" id="cancelEditBtn" class="bg-gray-300 px-4 py-2 rounded-md ml-2">Cancel</button>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Change Password Form (Hidden by default) -->
+    <div id="changePasswordForm" class="hidden bg-gray-50 p-4 rounded-md">
+        <h2 class="text-lg font-semibold mb-4">Change Password</h2>
+        <form method="POST" action="{{ url_for('profile') }}">
+            <input type="hidden" name="action" value="change_password">
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Current Password</label>
+                <input type="password" name="current_password" required 
+                       class="w-full border border-gray-300 rounded-md p-2">
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">New Password</label>
+                <input type="password" name="new_password" required 
+                       class="w-full border border-gray-300 rounded-md p-2">
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Confirm New Password</label>
+                <input type="password" name="confirm_password" required 
+                       class="w-full border border-gray-300 rounded-md p-2">
+            </div>
+            
+            <div>
+                <button type="submit" class="bg-primary text-white px-4 py-2 rounded-md">Change Password</button>
+                <button type="button" id="cancelPasswordBtn" class="bg-gray-300 px-4 py-2 rounded-md ml-2">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Toggle Edit Profile Form
+    document.getElementById('editProfileBtn').addEventListener('click', function() {
+        document.getElementById('editProfileForm').classList.remove('hidden');
+        document.getElementById('changePasswordForm').classList.add('hidden');
+    });
+    
+    document.getElementById('cancelEditBtn').addEventListener('click', function() {
+        document.getElementById('editProfileForm').classList.add('hidden');
+    });
+    
+    // Toggle Change Password Form
+    document.getElementById('changePasswordBtn').addEventListener('click', function() {
+        document.getElementById('changePasswordForm').classList.remove('hidden');
+        document.getElementById('editProfileForm').classList.add('hidden');
+    });
+    
+    document.getElementById('cancelPasswordBtn').addEventListener('click', function() {
+        document.getElementById('changePasswordForm').classList.add('hidden');
+    });
+    
+    // Handle City/District Selection
+    document.getElementById('city_select').addEventListener('change', function() {
+        const cityId = this.value;
+        const districtSelect = document.getElementById('district_select');
+        
+        // Clear current options
+        districtSelect.innerHTML = '';
+        
+        // Add districts for selected city
+        {% for city in locations.cities %}
+        if (cityId == '{{ city.id }}') {
+            {% for district in city.districts %}
+            const option = document.createElement('option');
+            option.value = '{{ district.id }}';
+            option.text = '{{ district.name }}';
+            districtSelect.appendChild(option);
+            {% endfor %}
+        }
+        {% endfor %}
+    });
+</script>
+{% endblock %}
+
