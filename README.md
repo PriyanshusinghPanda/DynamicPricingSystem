@@ -15,3 +15,5 @@ Username: admin@example.com
 Password: password
 After logging in, you will be redirected to the Admin Dashboard at:
 [Admin Dashboard](https://karanrawat.pythonanywhere.com/admin/dashboard)
+
+demo link: https://drive.google.com/file/d/1kqDnL6t2jH_-o1DrZTkypjz60vFdxAoh/view?usp=sharing
