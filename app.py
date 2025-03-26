@@ -6,6 +6,7 @@ import random
 import hashlib
 from functools import wraps
 
+# app declaration
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Change this to a secure random key in production
 
